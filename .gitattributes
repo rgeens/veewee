@@ -1,0 +1,7 @@
+# Set default behaviour, in case users don't have core.autocrlf set.
+* text=auto
+
+# Ensure Git doesn't convert Unix-style shell scripts to CRLF endings when on
+# Windows. Otherwise the \r characters can wreak havoc on the target box.
+templates/*/*.sh text eol=lf
+templates/*/ks.cfg eol=lf
